@@ -111,7 +111,7 @@ CollegeGraduate::CollegeGraduate(string name, time_t dob, string perm, bool hono
 }
 
 void CollegeGraduate::print_classname() {
-    cout << "GraduateStudent";
+    cout << "CollegeGraduate";
 }
 
 void CollegeGraduate::print_state() {
