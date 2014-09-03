@@ -37,6 +37,12 @@ static vtbl_t college_student_vtbl(
 	(printer_t)&CollegeStudent::print_state
 );
 
+static vtbl_t college_graduate_vtbl(
+    &college_student_vtbl,
+    (printer_t)&CollegeGraduate::print_classname,
+    (printer_t)&CollegeGraduate::print_state
+);
+
 // Defining classes Student, CollegeStudent (and, in future, CollegeGraduate)
 
 Student::Student()
@@ -92,4 +98,28 @@ void CollegeStudent::print_state() {
 	CALL_MEMBER_BY_PTR(*this, _pvtbl->_pbase->_print_state)();
 	RESTORE_VTBL;
 	cout << ", perm = " << _perm;
+}
+
+CollegeGraduate::CollegeGraduate()
+: CollegeStudent(), _honors() {
+    _pvtbl = &college_graduate_vtbl;
+}
+
+CollegeGraduate::CollegeGraduate(string name, time_t dob, string perm, bool honors)
+: CollegeStudent(name, dob, perm), _honors(honors) {
+    _pvtbl = &college_graduate_vtbl;
+}
+
+void CollegeGraduate::print_classname() {
+    cout << "GraduateStudent";
+}
+
+void CollegeGraduate::print_state() {
+    SET_VTBL(college_graduate_vtbl);
+    CALL_MEMBER_BY_PTR(*this, _pvtbl->_pbase->_print_state)();
+    RESTORE_VTBL;
+    if (_honors == 0)
+        cout << ", honors = no";
+    else
+        cout << ", honors = yes";
 }

@@ -61,4 +61,14 @@ public:
 	void print_state();
 };
 
+class CollegeGraduate : public CollegeStudent {
+private:
+    bool _honors;
+public:
+    CollegeGraduate();
+    CollegeGraduate(string name, time_t dob, string perm, bool honors);
+    void print_classname();
+    void print_state();
+};
+
 #endif // __DYNB_H__

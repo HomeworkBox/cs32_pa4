@@ -23,12 +23,12 @@ int main() {
 	pstudent->print();
 	cout << "-------------------------\n\n";
 
-	//Student &bilbo = *(new CollegeGraduate("Bilbo Baggins", 2128506,
-	//	"MiddleEarthUniversity-#24123", true));
-	//bilbo.print();
-	//cout << "-------------------------\n\n";
+	Student &bilbo = *(new CollegeGraduate("Bilbo Baggins", 2128506,
+		"MiddleEarthUniversity-#24123", true));
+	bilbo.print();
+	cout << "-------------------------\n\n";
 
-	//delete &bilbo;
+	delete &bilbo;
 	delete &jane;
 
 	return 0;
