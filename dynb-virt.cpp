@@ -1,3 +1,10 @@
+//
+//  dynb-virt.cpp
+//  pa4x
+//
+//  Created by TF: Tyler Weimin Ouyang & Felicia Truong on 8/27/14.
+//  Copyright (c) 2014 TF: Tyler Weimin Ouyang & Felicia Truong. All rights reserved.
+//
 #include <iostream>
 #include <string>
 #include <ctime>

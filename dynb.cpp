@@ -1,3 +1,11 @@
+//
+//  dynb.cpp
+//  pa4x
+//
+//  Created by TF: Tyler Weimin Ouyang & Felicia Truong on 8/27/14.
+//  Copyright (c) 2014 TF: Tyler Weimin Ouyang & Felicia Truong. All rights reserved.
+//
+
 // This implementation of dynamic dispatch is not how it is implemented
 // in contemporary C++ compilers. We are using only one pointer to a virtual
 // table, and the price we pay for it is that, from time to time, we have

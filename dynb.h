@@ -1,3 +1,11 @@
+//
+//  dynb.h
+//  pa4x
+//
+//  Created by TF: Tyler Weimin Ouyang & Felicia Truong on 8/27/14.
+//  Copyright (c) 2014 TF: Tyler Weimin Ouyang & Felicia Truong. All rights reserved.
+//
+
 #ifndef __DYNB_H__
 #define __DYNB_H__
 

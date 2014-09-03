@@ -65,8 +65,8 @@
 			children = (
 				2F8379A319B6DCBE00FD1F82 /* dynb.h */,
 				2F8379A119B6DCBE00FD1F82 /* dynb-main.cpp */,
-				2F83799919B65FC500FD1F82 /* dynb-virt.cpp */,
 				2F8379A219B6DCBE00FD1F82 /* dynb.cpp */,
+				2F83799919B65FC500FD1F82 /* dynb-virt.cpp */,
 				2F2473DE19AE85D100BA37CE /* main.cpp */,
 			);
 			path = pa4x;
