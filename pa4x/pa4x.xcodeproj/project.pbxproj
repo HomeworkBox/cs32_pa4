@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F2473DF19AE85D100BA37CE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F2473DE19AE85D100BA37CE /* main.cpp */; };
+		2F83799F19B6D5DC00FD1F82 /* dynb-virt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F83799919B65FC500FD1F82 /* dynb-virt.cpp */; };
+		2F8379A019B6D83900FD1F82 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F2473DE19AE85D100BA37CE /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		2F2473DB19AE85D100BA37CE /* pa4x */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pa4x; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F2473DE19AE85D100BA37CE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2F83799919B65FC500FD1F82 /* dynb-virt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "dynb-virt.cpp"; path = "../../dynb-virt.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		2F2473DD19AE85D100BA37CE /* pa4x */ = {
 			isa = PBXGroup;
 			children = (
+				2F83799919B65FC500FD1F82 /* dynb-virt.cpp */,
 				2F2473DE19AE85D100BA37CE /* main.cpp */,
 			);
 			path = pa4x;
@@ -118,7 +121,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F2473DF19AE85D100BA37CE /* main.cpp in Sources */,
+				2F8379A019B6D83900FD1F82 /* main.cpp in Sources */,
+				2F83799F19B6D5DC00FD1F82 /* dynb-virt.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +236,7 @@
 				2F2473E419AE85D100BA37CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
